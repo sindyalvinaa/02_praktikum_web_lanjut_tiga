@@ -38,6 +38,6 @@ Route::prefix('program')->group(function (){
     Route::get('/kunjungan-industri', [ProgramController::class, 'program3']);
 });
 
-Route::get ('/', [AboutUsController::class, 'aboutus']);
+Route::get('/about-us', [AboutUsController::class, 'aboutus']);
 
 Route::resource('contact-us', ContactUsController::class);
